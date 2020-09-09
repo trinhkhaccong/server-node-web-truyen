@@ -30,6 +30,9 @@ const client = new elasticsearch.Client({
   require('./get_data_truyen')(app,client);
   require('./get_conten')(app,client);
   require('./get_truyen')(app,client);
+  require('./get_list_home')(app,client);
+  require('./get_history')(app,client);
+
 
   
 
