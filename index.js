@@ -32,10 +32,8 @@ const client = new elasticsearch.Client({
   require('./get_truyen')(app,client);
   require('./get_list_home')(app,client);
   require('./get_history')(app,client);
-
-
-  
-
+  require('./get_search')(app,client);
+  require('./get_list_nomal')(app,client);
   
 var httpServer = http.createServer(app);
 httpServer.listen(PORT, function() {
